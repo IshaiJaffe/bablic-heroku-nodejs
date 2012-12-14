@@ -2,10 +2,9 @@
 <html>
 <head>
   <title>Your Title Here</title>
-  
+	<%- process.env['BABLIC_SNIPPET'] || '' %>
 </head>
 <body>
-	<%- process.env['BABLIC_SNIPPET'] || '' %>
  
     <div id="content">
 		<h1>Your Title Here</h1>

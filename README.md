@@ -53,10 +53,11 @@ After installing Bablic the application should be configured to fully integrate 
 in your layout.ejs file
 
     <html>
-    ....
-        <body>
+        <head>
             <%- process.env.BABLIC_SNIPPET || '' %>
-    ....
+        </head>
+        <body>
+		....
 
 
 ### Configuration
@@ -82,10 +83,12 @@ Include specific elements, even if their parents are excluded:
 in your layout.erb file ( or any other html template file you're using )
 
     <html>
-     ....
-        <body>
+        <head>
+		    ....
             <%= ENV('BABLIC_SNIPPET') %>
-    .....
+        </head>
+        <body>
+        .....
  
 ## Dashboard
 
